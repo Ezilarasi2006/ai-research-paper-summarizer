@@ -1,176 +1,97 @@
 # 📚 AI Research Paper Summarizer
 
-An AI-powered web application that helps students, researchers, and professionals quickly understand research papers. Users can upload PDF files, generate summaries, extract keywords, visualize word frequency, create word clouds, and ask questions related to the uploaded document.
-
----
+An interactive web application that helps students and researchers quickly understand research papers by uploading and analyzing PDF documents.
 
 ## 🚀 Features
 
-- 📄 Upload research papers in PDF format
-- 📝 Automatic text extraction from PDFs
-- 🤖 AI-generated research paper summaries
-- 🔑 Keyword extraction
-- ☁️ Word Cloud generation
-- 📊 Word Frequency Analysis
-- 💬 Ask questions about the uploaded paper
-- 🌐 Translate summaries into multiple languages
-- 👤 User Registration and Login
-- 🔒 Password Recovery using Security Questions
-- 🎨 Light and Dark Theme Support
-
----
+* 📄 PDF text extraction
+* 📝 Research paper summarization
+* 🔑 Keyword extraction
+* 📊 Word frequency analysis
+* ☁️ Word Cloud generation
+* 💬 Question & Answer
+* 🌐 Multilingual translation
+* 👤 User registration & login
+* 🔒 Password recovery
+* 🎨 Light/Dark themes
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- Streamlit
-
-### Backend
-- FastAPI
-- Python
-
-### Database
-- SQLite
-
-### Python Libraries
-- PyMuPDF (fitz)
-- PyPDF2
-- Pandas
-- Matplotlib
-- WordCloud
-- Deep Translator
-- Requests
-
----
+* **Frontend:** Streamlit
+* **Backend:** FastAPI, Python
+* **Database:** SQLite
+* **Libraries:** PyMuPDF, PyPDF2, Pandas, Matplotlib, WordCloud, Deep Translator, Requests
 
 ## 📂 Project Structure
 
-```
-ai_research_paper_summarizer/
-│
-├── app.py                 # Streamlit Frontend
-├── backend_api.py         # FastAPI Backend
+```text
+ai-research-paper-summarizer/
+├── app.py
+├── backend_api.py
 ├── requirements.txt
-├── users.db               # SQLite Database
 ├── README.md
 ├── LICENSE
-│
+├── .gitignore
 └── docs/
     ├── requirements.md
     ├── sprint_plan.md
     └── user_stories.md
 ```
 
----
+> `users.db` and `__pycache__` are generated locally and excluded from Git.
 
 ## ⚙️ Installation
 
-### 1. Clone the Repository
-
 ```bash
 git clone https://github.com/Ezilarasi2006/ai-research-paper-summarizer.git
-```
-
-### 2. Navigate to the Project Folder
-
-```bash
 cd ai-research-paper-summarizer
-```
-
-### 3. Install Dependencies
-
-```bash
+py -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
----
+## ▶️ Run the Project
 
-## ▶️ Run the Backend
-
-Start the FastAPI server:
+### Backend
 
 ```bash
 py -m uvicorn backend_api:app --reload
 ```
 
-The backend will run at:
-
-```
-http://127.0.0.1:8000
-```
-
----
-
-## ▶️ Run the Frontend
-
-Start the Streamlit application:
+### Frontend
 
 ```bash
 py -m streamlit run app.py
 ```
 
-The application will automatically open in your default web browser.
+## 📖 Usage
 
----
+1. Register or Login
+2. Upload a research paper PDF
+3. Extract and analyze the paper
+4. Generate a summary
+5. View keywords and word cloud
+6. Ask questions about the paper
+7. Translate the summary
 
-## 📖 How to Use
+## screenshots
+<img width="933" height="411" alt="image" src="https://github.com/user-attachments/assets/547fbead-d775-4b8c-a725-0f37cc7db767" />
+<img width="941" height="446" alt="image" src="https://github.com/user-attachments/assets/22bd51ff-93c2-4d64-b79b-9a347f1cf3cd" />
 
-1. Register a new account or log in.
-2. Upload a research paper in PDF format.
-3. The system extracts the text automatically.
-4. View the generated summary.
-5. Extract important keywords.
-6. Generate a Word Cloud.
-7. Analyze word frequency.
-8. Ask questions related to the uploaded paper.
-9. Translate the summary into your preferred language.
-
----
-
-## 📦 Requirements
-
-Install all required packages:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 🎯 Project Objectives
-
-- Reduce the time required to understand lengthy research papers.
-- Generate concise and meaningful summaries.
-- Improve research productivity.
-- Provide an interactive question-answering experience.
-- Support multilingual understanding of research papers.
-
----
 
 ## 🔮 Future Enhancements
 
-- Multiple PDF upload support
-- AI-powered semantic search
-- Research paper recommendations
-- Export summaries as PDF
-- Cloud deployment
-- Advanced Large Language Model (LLM) integration
+* Multiple PDF support
+* LLM-based summarization
+* Semantic search
+* PDF summary export
+* Cloud deployment
+* Research paper recommendations
 
----
+## 👩‍💻 Author
 
-## 📸 Screenshots
-
-<img width="929" height="425" alt="image" src="https://github.com/user-attachments/assets/d55c473b-b4a2-4d23-89b9-e5c6a02523cc" />
-<img width="922" height="410" alt="image" src="https://github.com/user-attachments/assets/f1bcb6b4-d95b-4500-aba9-bebde6079ef9" />
-<img width="928" height="422" alt="image" src="https://github.com/user-attachments/assets/edff4596-ef34-40dc-ad38-ae3edba4825c" />
-
-
-
----
+**Ezilarasi2006**
 
 ## 📄 License
 
-This project is licensed under the MIT License.
-
-
-
+MIT License
